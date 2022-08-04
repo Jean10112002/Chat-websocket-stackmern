@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import io from "socket.io-client";
 
 // const socket = io("http://localhost:3001");
-const socket = io("/");
+const socket = io();
 
 export default function App() {
   const [messages, setMessages] = useState([]);
